@@ -1,11 +1,24 @@
-export const Footer = () => (
-	<footer className="footer mt-auto py-3 text-center">
-		<p>
-			Check the <a target="_blank" href="https://4geeks.com/docs/start/start-react-advanced-project">template documentation</a> <i className="fa-solid fa-file"></i> for help.
-		</p>
-		<p>
-			Made with <i className="fa fa-heart text-danger" /> by{" "}
-			<a href="http://www.4geeksacademy.com">4Geeks Academy</a>
-		</p>
-	</footer>
-);
+import React from 'react';
+import { FaReact, FaGithub, FaLinkedin } from 'react-icons/fa';
+
+
+export const Footer = () => {
+return (
+		<footer className="bg-dark text-light py-4 mt-5">
+			<div className="container text-center">
+				<p className="mb-1">
+					Made with <FaReact className="text-info" /> by <strong>jdmora91</strong>
+				</p>
+				<div className="d-flex justify-content-center gap-3">
+					<a href="https://github.com/Jdmora91" target="_blank" rel="noopener noreferrer" className="text-light">
+						<FaGithub size={24} />
+					</a>
+					<a href="https://www.linkedin.com/in/jose-donis-mora-ramirez-870284321/" target="_blank" rel="noopener noreferrer" className="text-light">
+						<FaLinkedin size={24} />
+					</a>
+				</div>
+				<p className="mt-2 mb-0 small text-muted">© {new Date().getFullYear()} Contact List App</p>
+			</div>
+		</footer>
+	);
+}
