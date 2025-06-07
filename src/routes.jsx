@@ -11,6 +11,8 @@ import { Single } from "./pages/Single";
 import AddContact from "./pages/AddContact";
 import EditContact from "./pages/EditContact";
 import DeleteContact from "./pages/DeleteContact";
+import Confirmacion from "./pages/Confirmacion";
+
 
 
 export const router = createBrowserRouter(
@@ -30,6 +32,7 @@ export const router = createBrowserRouter(
         <Route path="/AddContact" element={<AddContact />} />  {/* Route for adding a new contact */}
         <Route path="/edit/:id" element={<EditContact />} />
         <Route path="/delete/:id" element={<DeleteContact />} />
+        <Route path="/Confirmacion" element={<Confirmacion/>} />
         
       </Route>
     )
